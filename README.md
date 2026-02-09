@@ -9,7 +9,7 @@ A modern, responsive 1-day technical conference website built with Python Flask,
 - **Category Filtering**: Filter sessions by Infrastructure & Development or Data & AI categories
 - **Responsive Design**: Works seamlessly on desktop, tablet, and mobile devices
 - **Speaker Profiles**: Each speaker includes LinkedIn integration
-- **8 Technical Talks**: Full-day schedule with 60-minute lunch break
+- **10 Technical Talks**: Extended schedule with 60-minute lunch break
 - **Google Cloud Focus**: All talks centered around Google Cloud Technologies
 
 ## 📋 Conference Details
@@ -17,9 +17,9 @@ A modern, responsive 1-day technical conference website built with Python Flask,
 - **Event**: Google Cloud Tech Summit 2026
 - **Date**: March 15, 2026
 - **Location**: San Francisco Convention Center, CA
-- **Duration**: 9:00 AM - 6:15 PM (with 60-minute lunch break)
-- **Total Talks**: 8 sessions
-- **Total Speakers**: 10 industry experts
+- **Duration**: 9:00 AM - 8:45 PM (with 60-minute lunch break)
+- **Total Talks**: 10 sessions
+- **Total Speakers**: 12 industry experts
 
 ## 🏗️ Project Structure
 
@@ -88,7 +88,7 @@ Conference/
 ## 🔍 Using the Website
 
 ### Viewing the Schedule
-- The home page displays all 8 talks in chronological order
+- The home page displays all 10 talks in chronological order
 - Each talk card shows:
   - Time slot
   - Title
@@ -129,6 +129,8 @@ Conference/
 | 02:45 - 03:45 | Data Analytics with BigQuery and Looker | 2 | Amanda Lee |
 | 04:00 - 05:00 | Security Best Practices for Google Cloud | 1 | James Wilson, Lisa Anderson |
 | 05:15 - 06:15 | Cloud Migration Strategies | 2 | Daniel Brown |
+| 06:30 - 07:30 | Building Real-time Applications with Firebase | 1 | Rachel Foster |
+| 07:45 - 08:45 | Cost Optimization and FinOps for Google Cloud | 2 | Kevin Zhang, Sarah Chen |
 
 ## 🛠️ Making Changes
 
@@ -138,7 +140,7 @@ Edit `app.py` and add a new entry to the `TALKS` list:
 
 ```python
 {
-    'id': 9,  # Increment the ID
+    'id': 11,  # Increment the ID
     'title': 'Your Talk Title',
     'speaker_ids': [1, 2],  # Reference speaker IDs
     'category': 1,  # 1 or 2
@@ -153,7 +155,7 @@ Edit `app.py` and add a new entry to the `SPEAKERS` list:
 
 ```python
 {
-    'id': 11,  # Increment the ID
+    'id': 13,  # Increment the ID
     'first_name': 'John',
     'last_name': 'Doe',
     'linkedin': 'https://www.linkedin.com/in/johndoe'
@@ -230,7 +232,7 @@ curl http://localhost:5000/api/search?q=cloud&category=2
 ### Manual Testing Checklist
 
 - [ ] Home page loads correctly
-- [ ] All 8 talks are displayed
+- [ ] All 10 talks are displayed
 - [ ] Lunch break is visually distinct
 - [ ] Search by title works (e.g., "Machine Learning")
 - [ ] Search by speaker works (e.g., "Sarah Chen")
