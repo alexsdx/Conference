@@ -153,6 +153,22 @@ TALKS = [
         'category': 2,
         'description': 'Real-world case studies and proven strategies for successful cloud migration projects.',
         'time': '05:15 PM - 06:15 PM'
+    },
+    {
+        'id': 9,
+        'title': 'Building Real-time Applications with Firebase and Cloud Firestore',
+        'speaker_ids': [11],
+        'category': 1,
+        'description': 'Learn how to build responsive, real-time applications using Firebase services integrated with Google Cloud Platform.',
+        'time': '06:30 PM - 07:30 PM'
+    },
+    {
+        'id': 10,
+        'title': 'Cost Optimization and FinOps for Google Cloud',
+        'speaker_ids': [12, 1],
+        'category': 2,
+        'description': 'Master the art of cloud cost management with proven strategies for optimizing your Google Cloud spending and implementing FinOps practices.',
+        'time': '07:45 PM - 08:45 PM'
     }
 ]
 
